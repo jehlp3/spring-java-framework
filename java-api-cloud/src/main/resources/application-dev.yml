@@ -1,0 +1,24 @@
+spring:
+  #conf de datasource- banco H2 com o nome, usuário e psswrd
+  datasource:
+    url: jdbc:h2:mem:sdw2023
+    username: sdw2023
+    password:
+  #Ver as querys no log, e que o hibernate crie as tabelas,
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update #create, validate, update ou create-drop
+    properties:
+      hibernate:
+        format_sql: true
+  #Acesse o db via Browser
+  #Identificação do perfil ativo e rodar ou dev ou prd ou hml..
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        trace: false
+        web-allow-others: false
