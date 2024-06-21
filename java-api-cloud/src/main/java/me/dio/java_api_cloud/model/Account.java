@@ -16,10 +16,11 @@ public class Account {
 
     private String agency;
 
-    @Column(scale = 13, precision = 2) //Scale decimal de precisão
+    //xxxxxxxxxxxxx,xx
+    @Column(precision = 13, scale = 2 ) //Scale decimal de precisão
     private BigDecimal balance;
 
-    @Column(name = "additional_limit",scale = 13, precision = 2)
+    @Column(name = "additional_limit", precision = 13, scale = 2 )
     private BigDecimal limit;
 
     //Getters and Setters
