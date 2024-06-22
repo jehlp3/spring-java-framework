@@ -1,4 +1,4 @@
-package me.dio.java_api_cloud.model;
+package me.dio.java_api_cloud.domain.model;
 
 import jakarta.persistence.Entity;
 
